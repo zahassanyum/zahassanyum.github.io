@@ -427,6 +427,10 @@ img.profile_pic {
 
     section .wrapper { width: 100%; }
     
+    section::-webkit-scrollbar {
+        width: 4px;               /* width of the entire scrollbar */
+    }
+
     /* section.s1 { padding-top: 40px; } */
 
     body { font-size: 18px; }
