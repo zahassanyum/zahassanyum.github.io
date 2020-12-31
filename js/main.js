@@ -33,7 +33,7 @@ $(document).ready(function() {
         curr_box = $(".content section:visible"); /* The section to hide */
 
         $(curr_box).css("overflow", "hidden"); /* To hide the scrollbars, if any */
-        $(curr_box).transition({ scale: 0.8, opacity: 0.4 }, 300, function() {
+        $(curr_box).transition({ scale: 0.75, opacity: 0.4 }, 300, function() {
             $(curr_box).transition({ x: -$(curr_box).width() }, 500, function() {
                 $(curr_box).hide();
                 $(curr_box).css("overflow", "auto");

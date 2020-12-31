@@ -170,6 +170,15 @@ section {
     opacity: 1;
 }
 
+section::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+  
+section::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 section.s1 {
     /* padding-top: 120px; */
 
@@ -371,6 +380,18 @@ button.btn:hover {
 
 /* ================================================ */
 
+img.profile_pic {
+    border-radius: 50%;
+    float: right;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 4px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+
 
 @media screen and (max-width: 767px) {
     .sidebar {
@@ -412,4 +433,5 @@ button.btn:hover {
     h1 { font-size: 40px; }
     section .heading { font-size: 60px; }
     .input-wrapper { width: 100%; }
+    img.profile_pic { width: 100px; height: 100px; margin: 0; margin-right: 15px; float: left; }
 }
