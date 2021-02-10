@@ -46,8 +46,19 @@ h1 {
     display: inline-block;
     background: url(../images/line-bottom.svg) center bottom no-repeat;
     padding-bottom: 30px;
-
+    position: relative;
      /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); */
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    inset: 2px 0px 0px;
+    z-index: -1;
+    margin: 12px -4px 32px -8px;
+    background-color: #555a736e;
+    border-radius: 16px;
+    transform: skewX(12deg) skewY(-2deg);
 }
 
 h2 {
@@ -394,6 +405,10 @@ img.profile_pic {
 
 
 @media screen and (max-width: 767px) {
+    h1:before {
+        margin: 4px -4px 32px -8px;
+    }
+
     .sidebar {
         position: fixed;
         width: 100%;
